@@ -6,7 +6,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: inline-block;
 }
-
 .dreamy-nav {
   margin-top: 1rem;
   color: var(--primary);
@@ -34,13 +33,26 @@
   color: var(--white);
   text-decoration: none;
 }
+
+
 @media (max-width: 576px) {
-  .dreamy-nav {
-    justify-content: center;
+  header {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  .dreamy-brand {
+    text-align: center;
+    margin-bottom: 0.75rem;
+    width: 100%;
+  }
+
+  .dreamy-nav {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
+    padding: 0;
   }
 
   .dreamy-nav .nav-link {
