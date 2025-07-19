@@ -7,7 +7,6 @@
   display: inline-block;
 }
 
-/* 🌟 NAVIGATION STYLING */
 .dreamy-nav {
   margin-top: 1rem;
   color: var(--primary);
@@ -28,25 +27,20 @@
   font-weight: 500;
   transition: all 0.3s ease;
 
-  /* ✅ Center the content inside box */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
-  /* Optional: Adjust min width */
   min-width: 100px;
 }
 
-/* 🔥 Hover and Active State */
 .dreamy-nav .nav-link:hover,
 .dreamy-nav .nav-link.active {
   background-color: var(--primary);
   color: var(--white);
   text-decoration: none;
 }
-
-/* 📱 Responsive Mobile Styling */
 @media (max-width: 576px) {
   header {
     display: flex;
@@ -69,12 +63,14 @@
   }
 
   .dreamy-nav .nav-link {
-    width: 80%;
-    text-align: center;
-
-    /* Re-apply centering for mobile */
+    width: 90%; 
+    height: 50px; 
+    font-size: 18px; 
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
+
