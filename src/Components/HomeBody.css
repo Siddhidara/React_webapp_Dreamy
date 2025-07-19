@@ -19,7 +19,44 @@
 
   .btn {
     font-size: 16px;
+  }@media (max-width: 480px) {
+  .body {
+    min-height: 80vh;
+    min-width: 95vw;
+    margin: 4vh auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center; /* ✅ Center text */
+    animation: fadeIn 0.8s ease-in-out; /* ✅ Apply animation */
   }
+
+  textarea.descriptionbox {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* 👇 Add this outside of media queries */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 }
 
 @media (max-width: 480px) {
