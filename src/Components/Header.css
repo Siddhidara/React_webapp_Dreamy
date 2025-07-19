@@ -1,0 +1,35 @@
+.dreamy-brand {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+}
+.dreamy-nav {
+  margin-top: 1rem;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+
+.dreamy-nav .nav-link {
+  color: var(--primary);
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dreamy-nav .nav-link:hover,
+.dreamy-nav .nav-link.active {
+  background-color: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+}
