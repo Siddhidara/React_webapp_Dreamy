@@ -31,7 +31,7 @@ function HomeBody({ setdescription, setshowdream }) {
               className="p-4 p-md-5 border rounded-3 bg-body-tertiary d-flex flex-column align-items-center"
               onSubmit={handlesubmit}
             >
-              <div className="form-label d-flex justify-content-center">
+              <div className="form-label w-100 d-flex justify-content-center">
                 <textarea
                   ref={textAreaRef}
                   className="description-control form-control descriptionbox"
@@ -46,18 +46,16 @@ function HomeBody({ setdescription, setshowdream }) {
                     fontSize: "18px",
                     padding: "8px",
                     height: "auto",
-                    width: "260px",
                     marginBottom: "10px",
                   }}
                 />
               </div>
 
               <button
-                className="btn btn-lg btn-primary"
+                className="w-100 btn btn-lg btn-primary"
                 type="submit"
                 style={{
                   backgroundColor: "var(--primary)",
-                  width: "260px",
                   fontSize: "18px",
                   height: "auto",
                 }}

@@ -55,4 +55,54 @@
   font-size: 1rem;
   line-height: 1.5;
 }
+/* Default layout already defined above */
+
+/* 📱 Small screens (phones) */
+@media (max-width: 600px) {
+  .features-container {
+    padding: 1rem;
+    height: auto;
+    margin: 2vh auto;
+  }
+
+  .features-heading {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  .features-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-cards {
+    grid-template-columns: 1fr; /* One card per row */
+    gap: 1rem;
+  }
+
+  .feature-card {
+    padding: 1rem;
+  }
+
+  .feature-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 💻 Medium screens (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .features-container {
+    max-width: 90vw;
+    padding: 1.5rem;
+  }
+
+  .feature-cards {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
 
