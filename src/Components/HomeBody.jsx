@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import "./Homebody.css";
+import "./HomeBody.css";
+
 function HomeBody({ setdescription, setshowdream }) {
   const [Text, setText] = useState("");
   const textAreaRef = useRef(null);
@@ -11,13 +12,15 @@ function HomeBody({ setdescription, setshowdream }) {
       textArea.style.height = textArea.scrollHeight + "px";
     }
   }, [Text]);
+
   const handlesubmit = (e) => {
     e.preventDefault();
     setdescription(Text);
     setshowdream(true);
   };
+
   return (
-    <div className="body" style={{ height: "80%" }}>
+    <div className="body">
       <div className="container col-xl-10 col-xxl-8 px-4 py-5">
         <div className="row align-items-center g-lg-5 py-5">
           <div className="col-lg-7 text-center text-lg-start">
